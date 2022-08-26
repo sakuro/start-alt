@@ -2,9 +2,9 @@
 Version: 0.0.2
 Date: 2022-08-26
   Changes:
-    - 
-  Bugfix:
-    - 
+    - Tweak README
+    - Release via GitHub action
+    - First public release
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2022-08-22
