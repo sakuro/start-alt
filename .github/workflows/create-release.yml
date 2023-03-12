@@ -21,7 +21,7 @@ jobs:
           echo "tag=v${VERSION}" >> "${GITHUB_OUTPUT}"
           echo "archive=${NAME}_${VERSION}.zip" >> "${GITHUB_OUTPUT}"
           echo "prefix=${NAME}_${VERSION}/" >> "${GITHUB_OUTPUT}"
-      - name: Create a release on GitHub >> "${GITHUB_OUTPUT}"
+      - name: Create a release on GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
