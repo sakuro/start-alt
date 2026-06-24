@@ -3,9 +3,9 @@
 require "json"
 require "rake/clean"
 
-mod_license = "<%= $mod_license %>"
-mod_category = "<%= $mod_category %>"
-mod_tags = %w[<%= $mod_tags.split(?,).join(' ') %>]
+mod_license = "default_mit"
+mod_category = "utilities"
+mod_tags = %w[]
 
 info = JSON.parse(File.read("info.json"))
 mod_name = info["name"]
