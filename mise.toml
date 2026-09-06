@@ -1,11 +1,23 @@
 [tools]
-ruby = "4.0"
 gh = "latest"
 actionlint = "latest"
 shellcheck = "latest"
+jq = "1.8.2"
+hk = "1.57.0"
+gitleaks = "8.30"
+"github:sakuro/factorix" = "0.23.0"
+
+[hooks]
+postinstall = 'test -n "$CI" || hk install'
 
 [settings]
 minimum_release_age = "3d"
 
+[task_config]
+includes = ["tasks"]
+
 [env]
-_.path = ["bin"]
+HK_MISE = "1"
+MOD_LICENSE = "default_mit"
+MOD_CATEGORY = "utilities"
+MOD_TAGS = ""
